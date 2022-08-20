@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, sans-serif;}
+form {border: 2px solid #ccc;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #E32;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 20px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.container {
+  padding: 15px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 0px;
+}
+
+</style>
+</head>
+<body>
+
+<form action="/your_page.html">
+  <div class="container" style="direction:rtl">
+    <label for="uname"><b>اسم المستخدم</b></label>
+    <input type="text" placeholder="أدخل اسم المستخدم" name="uname" required>
+
+    <label for="psw"><b>كلمة المرور</b></label>
+    <input type="password" placeholder="أدخل كلمة المرور" name="psw" required>
+        
+    <button type="submit">تسجيل الدخول</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> تذكرني
+    </label>
+  </div>
+<div class="container" style="background-color:#f4d6d3">
+    <span class="psw"> هل نسيت <a href="YOUR ULR PAGE HERE">كلمة المرور ؟</a></span>
+  </div>
+</form>
+</body>
+</html>
